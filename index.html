@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Naufal Fawwazi's Personal Website</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    	<link rel="icon" href="images/favicon.png" type="image/png">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="content">
+							<div class="inner">
+								<h1>Naufal Fawwazi</h1>
+								<p>
+									Fresh computer science graduate with a year of hands-on experience in mobile app design and development, <br />specializing in Kotlin and Java for native Android applications.</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="assets/resume-naufal-fawwazi.pdf" target="_blank">Resume</a></li>
+								<li><a href="https://fawwazi.itch.io" target="_blank">Projects</a></li>
+								<li><a href="#certificates">Certs</a></li>
+								<li><a href="#contact">Contact</a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- About -->
+							<article id="certificates">
+								<h2 class="major">Certificates</h2>
+								<span class="image main"><img src="images/certif-cflt.jpg" alt="CFLT Certificate" /></span>
+								<span class="image main"><img src="images/certif-nbs.jpg" alt="NBS Certificate" /></span>
+								<span class="image main"><img src="images/certif-certnexus.jpg" alt="AIBIZ Certificate" /></span>
+								<span class="image main"><img src="images/certif-bisaai.jpg" alt="BISA AI Certificate" /></span>
+								<span class="image main"><img src="images/certif-nvidia.jpg" alt="NVIDIA Certificate" /></span>
+								<span class="image main"><img src="images/certif-dncc.jpg" alt="DNCC Certificate" /></span>
+								<span class="image main"><img src="images/certif-aiis.jpg" alt="AIIS Certificate" /></span>
+								<span class="image main"><img src="images/certif-kmmi.jpg" alt="KMMI Certificate" /></span>
+								<span class="image main"><img src="images/certif-skac1.jpg" alt="Skill Academy Certificate" /></span>
+								<span class="image main"><img src="images/certif-skac2.jpg" alt="Skill Academy Certificate" /></span>
+							</article>
+
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">Contact</h2>
+								<form id="email-form">
+									<div class="fields">
+										<div class="field">
+											<label for="email">Subject</label>
+											<input type="text" name="subject" id="subject" required/>
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="4" required></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Reset" /></li>
+									</ul>
+								</form>
+
+								<ul class="icons">
+									<li><a href="https://t.me/naufalfawwazi" target="_blank" class="icon brands fa-telegram"><span class="label">Telegram</span></a></li>
+									<li><a href="https://wa.me/6282287708760" target="_blank" class="icon brands fa-whatsapp"><span class="label">Whats App</span></a></li>
+									<li><a href="https://instagram.com/_fawwazi" target="_blank" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://github.com/naufalfawwazi" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</article>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy;Website Design by <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				document.getElementById('email-form').addEventListener('submit', function (event) {
+					event.preventDefault();
+
+					const recipient = 'naufalfawwazi@outlook.com';
+					const subject = encodeURIComponent(document.getElementById('subject').value);
+					const body = encodeURIComponent(document.getElementById('message').value);
+
+					const mailtoLink = `mailto:${recipient}?subject=${subject}&body=${body}`;
+
+					window.location.href = mailtoLink;
+				});
+			</script>
+
+	</body>
+</html>
